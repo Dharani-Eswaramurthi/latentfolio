@@ -258,7 +258,7 @@
     aspect-ratio: 1;
     display: grid;
     place-items: center;
-    color: white;
+    color: var(--inverse-ink);
     background: var(--inverse-surface);
     border-radius: 50% 50% 50% 14%;
     font-family: var(--font-serif);
@@ -312,14 +312,14 @@
     align-items: center;
     gap: 8px;
     padding: 9px 15px;
-    color: white;
+    color: var(--inverse-ink);
     background: var(--inverse-surface);
     border-radius: 999px;
     font-size: 0.74rem;
     font-weight: 750;
-    transition: background 180ms ease, transform 180ms ease;
+    transition: background 180ms ease, color 180ms ease, transform 180ms ease;
   }
-  .header-cta:hover { background: var(--violet); transform: translateY(-1px); }
+  .header-cta:hover { color: var(--inverse-ink); background: var(--violet); transform: translateY(-1px); }
   .nav-toggle { display: none; width: 44px; height: 44px; place-items: center; padding: 0; border: 0; border-radius: 50%; background: var(--inverse-surface); color: var(--inverse-ink); }
   .nav-close { display: none; }
 
