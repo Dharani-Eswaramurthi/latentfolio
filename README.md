@@ -4,6 +4,8 @@ An evidence-first Astro portfolio starter for AI, ML, and GenAI engineers. It he
 
 Created and maintained by [Dharani Eswaramurthi](https://github.com/Dharani-Eswaramurthi).
 
+[Explore the free live demo](https://latentfolio.vercel.app/) · [Compare Free and Pro](https://latentfolio-pro.netlify.app/template?utm_source=github&utm_medium=website&utm_campaign=latentfolio_2026_11)
+
 > Every person, employer, project, and metric in the demo is fictional. Replace the sample content before publishing.
 
 ## Included
@@ -25,6 +27,8 @@ Created and maintained by [Dharani Eswaramurthi](https://github.com/Dharani-Eswa
 | Interactive hero demo | Hero demo plus three-mode AI systems lab |
 | Core profile sections | Richer modules and release documentation |
 | MIT License | Commercial single-user license |
+
+**Have completed projects that need more room?** [LatentFolio Pro is $29 once](https://dharani96556.gumroad.com/l/latentfolio-pro?utm_source=github&utm_medium=website&utm_campaign=latentfolio_2026_11&utm_content=free_readme). It adds three detailed project examples, reusable evaluation/decision/limitation sections, the AI Systems Lab, and launch documentation. [Inspect a Pro case study](https://latentfolio-pro.netlify.app/work/support-copilot) before choosing. The Pro license covers your own personal portfolio; Free remains MIT-licensed.
 
 ## Requirements
 
@@ -52,6 +56,8 @@ npm create astro@latest -- --template Dharani-Eswaramurthi/latentfolio
 ```
 
 ## Customize
+
+The seller's hosted demo includes an optional Pro comparison banner. Buyer/fork builds hide it by default. Set `TEMPLATE_DEMO=false` to explicitly disable it; `true` is for the creator's demo. It also activates for the exact creator-owned `SITE_URL` origin `https://latentfolio.vercel.app` unless explicitly disabled.
 
 1. Replace the fictional profile, projects, experience, skills, writing, and education in `src/data/site.ts`.
 2. Replace `public/avatar-placeholder.svg`, `public/resume-placeholder.pdf`, `public/og-cover.svg`, and `public/og-cover.png`.

@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import DemoPromotion from '../components/DemoPromotion.astro';
 import '@fontsource-variable/instrument-sans/wght.css';
 import '@fontsource-variable/newsreader/wght.css';
 import '@fontsource-variable/newsreader/wght-italic.css';
@@ -131,6 +132,7 @@ const jsonLd = noindex
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="page-noise" aria-hidden="true"></div>
     <Header />
+    <DemoPromotion />
     <main id="main-content" tabindex="-1">
       <slot />
     </main>
