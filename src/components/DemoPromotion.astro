@@ -1,5 +1,6 @@
 ---
-const enabled = process.env.TEMPLATE_DEMO === 'true' || (process.env.TEMPLATE_DEMO !== 'false' && Astro.site?.hostname === 'latentfolio.vercel.app');
+const creatorDemo = Astro.site?.hostname === 'latentfolio.vercel.app' || process.env.VERCEL_PROJECT_PRODUCTION_URL === 'latentfolio.vercel.app';
+const enabled = process.env.TEMPLATE_DEMO === 'true' || (process.env.TEMPLATE_DEMO !== 'false' && creatorDemo);
 const pro = 'https://latentfolio-pro.netlify.app/template?utm_source=latentfolio-free-demo&utm_medium=website&utm_campaign=latentfolio_2026_11';
 ---
 {enabled && <aside class="free-pro-offer" aria-label="LatentFolio editions"><div class="shell"><span><strong>LatentFolio Free</strong><small>Want dedicated case studies and the AI Systems Lab?</small></span><a href={pro}>Explore Pro · $29 ↗</a></div></aside>}

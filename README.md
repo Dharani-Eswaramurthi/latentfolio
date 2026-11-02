@@ -57,7 +57,7 @@ npm create astro@latest -- --template Dharani-Eswaramurthi/latentfolio
 
 ## Customize
 
-The seller's hosted demo includes an optional Pro comparison banner. Buyer/fork builds hide it by default. Set `TEMPLATE_DEMO=false` to explicitly disable it; `true` is for the creator's demo. It also activates for the exact creator-owned `SITE_URL` origin `https://latentfolio.vercel.app` unless explicitly disabled.
+The seller's hosted demo includes an optional Pro comparison banner. Buyer/fork builds hide it by default. Set `TEMPLATE_DEMO=false` to explicitly disable it; `true` is for the creator's demo. It also activates for the exact creator-owned `SITE_URL` origin or Vercel production hostname `latentfolio.vercel.app` unless explicitly disabled. When `SITE_URL` is unset, Vercel builds use the platform's production hostname for canonical URLs.
 
 1. Replace the fictional profile, projects, experience, skills, writing, and education in `src/data/site.ts`.
 2. Replace `public/avatar-placeholder.svg`, `public/resume-placeholder.pdf`, `public/og-cover.svg`, and `public/og-cover.png`.
