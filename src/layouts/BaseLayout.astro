@@ -7,6 +7,7 @@ import '@fontsource-variable/newsreader/wght.css';
 import '@fontsource-variable/newsreader/wght-italic.css';
 import '../styles/global.css';
 import { profile, socialLinks } from '../data/site';
+import { serializeJsonLd } from '../utils/serialize-json-ld.mjs';
 
 interface Props {
   title?: string;
@@ -126,7 +127,7 @@ const jsonLd = noindex
     <meta name="twitter:image" content={imageUrl} />
     <meta name="twitter:image:alt" content={imageAlt} />
 
-    {jsonLd.map((entry) => <script is:inline type="application/ld+json" set:html={JSON.stringify(entry)} />)}
+    {jsonLd.map((entry) => <script is:inline type="application/ld+json" set:html={serializeJsonLd(entry)} />)}
   </head>
   <body id="top">
     <a class="skip-link" href="#main-content">Skip to content</a>
