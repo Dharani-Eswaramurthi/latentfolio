@@ -32,7 +32,7 @@ Created and maintained by [Dharani Eswaramurthi](https://github.com/Dharani-Eswa
 
 ## Requirements
 
-- Node.js 22.12 or later
+- Node.js 22.23.4 or later
 - npm 10 or later
 
 ## Start locally
@@ -45,6 +45,8 @@ npm run dev
 Run the production checks:
 
 ```bash
+npm test
+npm run audit
 npm run build
 npm run preview
 ```
